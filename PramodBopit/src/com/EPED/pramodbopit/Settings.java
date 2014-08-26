@@ -1,5 +1,7 @@
 package com.EPED.pramodbopit;
 
+import java.io.FileOutputStream;
+
 import android.app.Activity;
 import android.content.Context;
 import android.media.AudioManager;
@@ -12,8 +14,7 @@ import android.widget.SeekBar;
 
 public class Settings extends Activity{
 
-	public int difficulty = 1;
-	
+private int difficulty;	
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -41,6 +42,8 @@ public class Settings extends Activity{
 	        }
 	    });
 	}
+	
+		
 	    public void onRadioButtonClicked(View view) {
 	   	  
 	    	

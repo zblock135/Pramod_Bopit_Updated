@@ -50,6 +50,7 @@ public class Play extends Activity{
 	private MediaPlayer yellMP;
 	private MediaPlayer stopMP;
 	
+//	private Settings setting;
 	
 	
 	@Override
@@ -513,6 +514,14 @@ public class Play extends Activity{
 		stopMP.seekTo(0);
 	}
 	
+	
+	
+	public void changeTimer(){
+		if(timer>1000){
+			
+			timer = 2000 - ((1000)/((100)))*score;
+		}
+	}
 	
 }
 	
