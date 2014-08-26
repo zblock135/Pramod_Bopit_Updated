@@ -4,6 +4,7 @@ Pramod_Bopit_Updated
 App for EPED II
 
 Directions:
+
 Below are the 6 possible actions the game will ask you to perform. You must perform them within the alotted time to recieve points. If you do not complete the action, or complete another action that was not asked for, you will lose the game. In order to restart the game once you lose, simply tap the screen and the game will restart.
 
 Shake it: Shake the phone. Only a slight shake is needed.
