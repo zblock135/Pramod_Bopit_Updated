@@ -244,6 +244,7 @@ public class Play extends Activity{
 				
 				if (shake){
 					score = score+1;
+					timer = timer*.98; // causes the game to go 2% faster with each itneration
 					shakeMP.pause();
 					actionComplete = true;
 					handler.post(setScore);
@@ -281,6 +282,7 @@ public class Play extends Activity{
 			
 			if (touch){
 				score = score+1;
+				timer = timer*.98; // causes the game to go 2% faster with each itneration
 				tapMP.pause(); 
 				actionComplete = true;
 				handler.post(setScore);
@@ -319,6 +321,7 @@ public class Play extends Activity{
 			
 			if (upPressed){
 				score = score+1;
+				timer = timer*.98; // causes the game to go 2% faster with each itneration
 				actionComplete = true;
 				handler.post(setScore);
 				upMP.pause();
@@ -357,6 +360,7 @@ public class Play extends Activity{
 			
 			if (downPressed){
 				score = score+1;
+				timer = timer*.98; // causes the game to go 2% faster with each itneration
 				actionComplete = true;
 				handler.post(setScore);
 				downMP.pause();
@@ -397,6 +401,7 @@ public class Play extends Activity{
 			}
 			if (yell){
 				score = score+1;
+				timer = timer*.98; // causes the game to go 2% faster with each itneration
 				actionComplete = true;
 				handler.post(setScore);
 				yellMP.pause();
@@ -447,6 +452,7 @@ public class Play extends Activity{
 		
 		if (actionComplete == false){
 			score = score+1;
+			timer = timer*.98; // causes the game to go 2% faster with each itneration
 			actionComplete = true;
 			handler.post(setScore);
 			stopMP.pause();
