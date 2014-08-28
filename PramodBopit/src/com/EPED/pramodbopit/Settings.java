@@ -14,13 +14,17 @@ import android.widget.SeekBar;
 
 public class Settings extends Activity{
 
-public static int difficulty;	
+public static int difficulty = 1; //This variable controls how quickly the timer approaches 1 second
+
+
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.settings);
 		
 		//Initializes the Seekbar to be a volume controller (Code by Alan Moore [http://stackoverflow.com/questions/7459228/create-slider-to-change-android-volume])
+		//The code below looks for updates to the seekbar, and maps the value of the bar to a volume level
+		//Then, the code sets the media volume to be equal to this value, thus allowing the user to change the volume of the game
 		final AudioManager audioManager = (AudioManager)getSystemService(Context.AUDIO_SERVICE);	
 	    int maxVolume = audioManager.getStreamMaxVolume(AudioManager.STREAM_MUSIC);
 	    int curVolume = audioManager.getStreamVolume(AudioManager.STREAM_MUSIC);
@@ -43,12 +47,12 @@ public static int difficulty;
 	    });
 	}
 	
-		
+		//This method detects when a radio button has been pressed and sets the difficulty depending on which button was pressed.
 	    public void onRadioButtonClicked(View view) {
 	   	  
 	    	
 	    	RadioGroup radioGroup = (RadioGroup) findViewById(R.id.radioGroup1);
-	    	int id = radioGroup.getCheckedRadioButtonId();
+	    	int id = radioGroup.getCheckedRadioButtonId(); //This gets the ID of the checked radio button
 	    	if (id == -1){
 	    	    //no item selected
 	    	}
@@ -63,13 +67,7 @@ public static int difficulty;
 	    	    	difficulty = 3;
 	    	    }
 	    	}
-	    	
-	    	
-	    	
-	        EditText text = (EditText)findViewById(R.id.diff);
-		   	text.setText(""+difficulty);
 	    }
-	    
 	}
 
 	
