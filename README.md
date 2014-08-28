@@ -6,7 +6,7 @@ App for EPED II
 This is an Android application game.  The game is loosely based off of the children's toy 'Bop It' where the user obeys voice commands in order to score points. 
 
 Core Functionality:
-This app utilizes the accelerometer as one of the user commands. The accelerometer is turned toggled by the app. It also has thershold detetection and alpha filtering. 
+This app utilizes the accelerometer as one of the user commands. The accelerometer is toggled on and off by the app. It also utilizes threshold detetection and alpha filtering. 
 
 Advanced Functionality:
 
