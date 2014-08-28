@@ -9,9 +9,14 @@ Core Functionality:
 This app utilizes the accelerometer as one of the user commands. The accelerometer is turned toggled by the app. It also has thershold detetection and alpha filtering. 
 
 Advanced Functionality:
-Advanced User Interface - Clicking the buttons on the opening MainActivity will take the user to different pages with                             separate funtions
-Advanced Algorithms     - 
-Advanced Visualizations - In the gameplay of the app a new picture is shown for every given command
+
+Advanced User Interface - Clicking the buttons on the opening MainActivity will take the user to different pages with                             separate functions.
+
+Advanced Algorithms     - The app uses a random number generator to determine which actions to choose. In addition, the                           code makes reoccuring actions (having the same action twice) unlikely.
+
+Advanced Visualizations - In the gameplay of the app a new picture is shown for every given command. A text field and a                           sound clip are also used to tell you which action to complete.
+
+Multiple Sensors        - In addition to the accelerometer, our app uses multiple sensors during the course of the game.                           Some actions use physical buttons on the phone (Turn up and Turn down). The tap it action                               makes use of the touch screen, and the yell it function make use of the microphone.
 
 
 Directions:
