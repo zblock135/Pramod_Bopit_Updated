@@ -9,9 +9,10 @@ public class ShakeDetector implements SensorEventListener{
 	
 	
 	private OnShakeListener mShakeListener;
-	float lastX=0;
-	float lastY=0;
-	float lastZ=0;
+	double lastX=0;
+	double lastY=0;
+	double lastZ=0;
+	double alpha=0.850;
 	public ShakeDetector(OnShakeListener shakeListener) {
 		mShakeListener = shakeListener;
 	}
@@ -22,16 +23,15 @@ public class ShakeDetector implements SensorEventListener{
 
 	@Override
 	public void onSensorChanged(SensorEvent event) {
-		float x = event.values[0];
-      //  float y = event.values[1];
-     //   float z = event.values[2];
+		double x = event.values[0];
+		x = (1-alpha)*lastX + (alpha*x);
         
-        float speed = Math.abs((x - lastX));
-        if (speed > 5){
+        double speed = Math.abs((x - lastX));
+        if (speed > 6){
         	mShakeListener.onShake();
         	
         }
-        
+        lastX = x;
         
 		
 	}

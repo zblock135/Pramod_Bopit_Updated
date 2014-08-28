@@ -14,7 +14,7 @@ import android.widget.SeekBar;
 
 public class Settings extends Activity{
 
-private int difficulty;	
+public static int difficulty;	
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);

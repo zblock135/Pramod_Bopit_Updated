@@ -239,6 +239,7 @@ int drawable ic_launcher 0x7f020058
 int drawable icon 0x7f020059
 int drawable icon2 0x7f02005a
 int id TextView01 0x7f060044
+int id actionPicture 0x7f06003f
 int id action_bar 0x7f06001c
 int id action_bar_activity_content 0x7f060015
 int id action_bar_container 0x7f06001b
@@ -275,7 +276,6 @@ int id homeAsUp 0x7f060005
 int id icon 0x7f06002a
 int id ifRoom 0x7f06000a
 int id image 0x7f060027
-int id imageView1 0x7f06003f
 int id listMode 0x7f060001
 int id list_item 0x7f060029
 int id middle 0x7f060012

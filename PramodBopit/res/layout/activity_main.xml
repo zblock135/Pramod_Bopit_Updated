@@ -39,7 +39,7 @@
 
     <ImageView
         android:contentDescription="This is the logo for our app."
-        android:id="@+id/imageView1"
+        android:id="@+id/actionPicture"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
